@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruby Kiwi | Nature's Crimson Gem</title>
+    <meta name="description" content="Zespri RubyRed Kiwi - Experience the vibrant ruby-red flesh rich in anthocyanins and the sweet berry-like flavor.">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header style="position: fixed; top: 0; width: 100%; z-index: 100; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; background: rgba(15, 15, 15, 0.8); backdrop-filter: blur(15px); border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+        <div class="logo" style="font-weight: 800; font-size: 1.5rem; letter-spacing: -1px; display: flex; align-items: center; gap: 8px;">
+            <div style="width: 24px; height: 24px; background: var(--primary-ruby); border-radius: 6px;"></div>
+            RUBY<span style="color: var(--primary-ruby);">KIWI</span>
+        </div>
+        <nav>
+            <ul style="display: flex; gap: 40px; list-style: none;">
+                <li><a href="#home" style="color: white; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: var(--transition);">Home</a></li>
+                <li><a href="#story" style="color: white; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: var(--transition);">Product Story</a></li>
+                <li><a href="#features" style="color: white; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: var(--transition);">Features</a></li>
+                <li><a href="#contact" style="color: white; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: var(--transition);">Contact</a></li>
+                <li><a href="index.html" style="color: var(--text-muted); text-decoration: none; font-weight: 500; font-size: 0.95rem; display: flex; align-items: center; gap: 5px;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    한국어
+                </a></li>
+            </ul>
+        </nav>
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <a href="#" class="btn btn-primary" style="padding: 10px 24px; font-size: 0.9rem; border-radius: 8px;">Buy Now</a>
+            <button id="menu-toggle" style="background: none; border: none; color: white; display: none; cursor: pointer;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" style="position: fixed; top: 0; right: -100%; width: 80%; height: 100vh; background: var(--bg-dark); z-index: 1000; transition: 0.5s; padding: 100px 10%; display: flex; flex-direction: column; gap: 30px; box-shadow: -10px 0 30px rgba(0,0,0,0.5);">
+        <button id="menu-close" style="position: absolute; top: 20px; right: 20px; background: none; border: none; color: white; cursor: pointer;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <a href="#home" style="color: white; text-decoration: none; font-size: 1.5rem; font-weight: 600;">Home</a>
+        <a href="#story" style="color: white; text-decoration: none; font-size: 1.5rem; font-weight: 600;">Product Story</a>
+        <a href="#features" style="color: white; text-decoration: none; font-size: 1.5rem; font-weight: 600;">Features</a>
+        <a href="#contact" style="color: white; text-decoration: none; font-size: 1.5rem; font-weight: 600;">Contact</a>
+        <a href="index.html" style="color: var(--primary-ruby-light); text-decoration: none; font-size: 1.2rem; font-weight: 500;">Korean Version</a>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-background"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-tag">SEASONAL LIMITED</span>
+                    <h1 class="hero-title">Nature's Own<br><span>Ruby-Red</span> Sweetness</h1>
+                    <p class="hero-description">
+                        A special gift available only from April to June. 
+                        Experience the berry-like flavor and rich nutrition packed within the deep ruby-red flesh.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#features" class="btn btn-primary">Explore Ruby Kiwi</a>
+                        <a href="#" class="btn btn-outline">The Secret of Taste</a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="kiwi-orb"></div>
+                    <svg class="kiwi-main-img" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="250" cy="250" rx="200" ry="160" fill="#8B5E3C" />
+                        <ellipse cx="250" cy="250" rx="185" ry="145" fill="#C5E063" />
+                        <path d="M250 150 C280 150 250 250 350 250 C250 250 280 350 250 350 C220 350 250 250 150 250 C250 250 220 150 250 150Z" fill="#E0115F" opacity="0.9">
+                            <animate attributeName="opacity" values="0.7;0.9;0.7" dur="3s" repeatCount="indefinite" />
+                        </path>
+                        <circle cx="250" cy="200" r="4" fill="#1A1A1A" />
+                        <circle cx="280" cy="220" r="4" fill="#1A1A1A" />
+                        <circle cx="290" cy="250" r="4" fill="#1A1A1A" />
+                        <circle cx="280" cy="280" r="4" fill="#1A1A1A" />
+                        <circle cx="250" cy="300" r="4" fill="#1A1A1A" />
+                        <circle cx="220" cy="280" r="4" fill="#1A1A1A" />
+                        <circle cx="210" cy="250" r="4" fill="#1A1A1A" />
+                        <circle cx="220" cy="220" r="4" fill="#1A1A1A" />
+                        <ellipse cx="200" cy="210" rx="40" ry="20" fill="white" opacity="0.2" transform="rotate(-30, 200, 210)" />
+                    </svg>
+                    
+                    <div class="floating-leaf leaf-1">
+                        <svg viewBox="0 0 100 100" fill="#8EE53F"><path d="M10 50 Q50 10 90 50 Q50 90 10 50" /></svg>
+                    </div>
+                    <div class="floating-leaf leaf-2">
+                        <svg viewBox="0 0 100 100" fill="#6BA12E"><path d="M10 50 Q50 10 90 50 Q50 90 10 50" /></svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="section-title">
+                <h2>Why Ruby Kiwi?</h2>
+                <p>Three unique charms only Ruby Kiwi possesses</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                        </svg>
+                    </div>
+                    <h3>Mystical Ruby Glow</h3>
+                    <p>Rich in anthocyanins, an antioxidant that creates the stunning, jewel-like red flesh.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </div>
+                    <h3>Berry-like Sweetness</h3>
+                    <p>Delivers a unique flavor profile of strawberries and blueberries with overwhelming sweetness.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Vitalizing Nutrition</h3>
+                    <p>Packed with Vitamin C and high nutrient density to bring vibrant energy to your daily life.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.padding = '15px 5%';
+                header.style.boxShadow = '0 10px 30px rgba(0,0,0,0.5)';
+            } else {
+                header.style.padding = '20px 5%';
+                header.style.boxShadow = 'none';
+            }
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuClose = document.getElementById('menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.style.right = '0';
+        });
+
+        menuClose.addEventListener('click', () => {
+            mobileMenu.style.right = '-100%';
+        });
+
+        // Close menu when clicking links
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.style.right = '-100%';
+            });
+        });
+    </script>
+</body>
+</html>
